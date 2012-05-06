@@ -1,9 +1,9 @@
 ;(function(global) {
 
-	global.Filmweb = {
+	global.FilmwebAdvAvoid = {
 		
 		skipAdv : function() {
-			if (typeof console != "undefined") {
+			if (console) {
 				console.info("skipping adv");
 			}
 			$("#goToLink.welcomeScreenButton").click();
@@ -14,4 +14,4 @@
 
 // skip advertisement
 
-this.skipAdv();
+FilmwebAdvAvoid.skipAdv();
